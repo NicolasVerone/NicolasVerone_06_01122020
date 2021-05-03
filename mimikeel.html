@@ -6,62 +6,122 @@
   <title>Fisheye</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="css/stylephotographer.css" />
+  <script src="https://kit.fontawesome.com/7c1a4ed08f.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
 </head>
 
 <body>
   <header>
-    <div class=headerlogo_container>
-    <img class="headerlogo" src="images/logo_fisheye.png"
-      alt="Logo su site Fisheye, plateforme pour photographes indépendants" />
+    <div aria-label="emplacement du logo Fisheye" class=headerlogo_container>
+      <img aria-label="logo Fisheye" class="headerlogo" src="images/logo_fisheye.png"
+        alt="Logo su site Fisheye, plateforme pour photographes indépendants" />
     </div>
   </header>
-  <main class="content">
+  <main aria-label="" class="content">
     <section class="section_container">
       <div class="section_description">
         <h1>Mimi Keel</h1>
         <p class="section_location">London, UK</p>
         <p class="section_tagline">Voir le beau dans le quotidien</p>
         <div class="section_buttons">
-            <button class="button" type="button" value="Portrait">#Portrait</button>
-            <button class="button" type="button" value="Travel">#Travel</button>
-            <button class="button" type="button" value="Animals">#Animals</button>
-            <button class="button" type="button" value="Events">#Events</button>
-          </div>
+          <button class="button" type="button" value="Portrait">#Portrait</button>
+          <button class="button" type="button" value="Travel">#Travel</button>
+          <button class="button" type="button" value="Animals">#Animals</button>
+          <button class="button" type="button" value="Events">#Events</button>
+        </div>
       </div>
+      <button id="launchmodal" class="button_contact" type="button" value="Contact">Contactez-moi</button>
       <div class="section_profilpic_container">
         <img class="section_profilpic_image" src="images/photographers/MimiKeel.jpg"
           alt="Mimi Keel, Photographe freelance" />
       </div>
-      </section>
-      <section class="portfolio">
-          <div class="porfolio_image_container">
-            <img class="portfolio_image" src="images/Mimi/Animals_Rainbow.jpg"
-            alt="Photographie Animals Rainbow, prise par la photographe Mimi Keels. Oiseau coloré posé sur une branche" />
-          </div>
-          <div class="portfolio_description">
-          </div>
-      </section>
-      <section class="portfolio">
-        <div class="porfolio_image_container">
-            <img class="portfolio_image" src="images/Mimi/Travel_Lonesome.jpg"
-            alt="Photographie Animals Rainbow, prise par la photographe Mimi Keels. Oiseau coloré posé sur une branche" />
-          </div>
-          <div class="portfolio_description">
-          </div>
     </section>
-          
     <section class="portfolio">
-        <div class="porfolio_image_container">
-            <img class="portfolio_image" src="images/Mimi/Event_SeasideWedding.jpg"
-            alt="Photographie Animals Rainbow, prise par la photographe Mimi Keels. Oiseau coloré posé sur une branche" />
-          </div>
-          <div class="portfolio_description">
-          </div>
+      <div class="porfolio_image_container">
+        <img class="portfolio_image" src="images/Mimi/Animals_Rainbow.jpg"
+          alt="Photographie Animals Rainbow, prise par la photographe Mimi Keels. Oiseau coloré posé sur une branche" />
+      </div>
+      <div class="portfolio_description">
+        <h3>Arc-en-ciel</h3>
+        <span class="portfolio_legend">12 <i class="fas fa-heart"></i> </span>
+      </div>
     </section>
-   
+    <section class="portfolio">
+      <div class="porfolio_image_container">
+        <img class="portfolio_image" src="images/Mimi/Travel_Lonesome.jpg"
+          alt="Photographie Animals Rainbow, prise par la photographe Mimi Keels. Oiseau coloré posé sur une branche" />
+      </div>
+      <div class="portfolio_description">
+        <h3>Arc-en-ciel</h3>
+        <span class="portfolio_legend">12 <i class="fas fa-heart"></i> </span>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="porfolio_image_container">
+        <img class="portfolio_image" src="images/Mimi/Event_SeasideWedding.jpg"
+          alt="Photographie Animals Rainbow, prise par la photographe Mimi Keels. Oiseau coloré posé sur une branche" />
+      </div>
+      <div class="portfolio_description">
+        <h3>Arc-en-ciel</h3>
+        <span class="portfolio_legend">12 <i class="fas fa-heart"></i> </span>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="porfolio_image_container">
+        <img class="portfolio_image" src="images/Mimi/Event_SeasideWedding.jpg"
+          alt="Photographie Animals Rainbow, prise par la photographe Mimi Keels. Oiseau coloré posé sur une branche" />
+      </div>
+      <div class="portfolio_description">
+        <h3>Arc-en-ciel</h3>
+        <span class="portfolio_legend">12 <i class="fas fa-heart"></i> </span>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="porfolio_image_container">
+        <img class="portfolio_image" src="images/Mimi/Event_SeasideWedding.jpg"
+          alt="Photographie Animals Rainbow, prise par la photographe Mimi Keels. Oiseau coloré posé sur une branche" />
+      </div>
+      <div class="portfolio_description">
+        <h3>Arc-en-ciel</h3>
+        <span class="portfolio_legend">12 <i class="fas fa-heart"></i> </span>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="porfolio_image_container">
+        <img class="portfolio_image" src="images/Mimi/Event_SeasideWedding.jpg"
+          alt="Photographie Animals Rainbow, prise par la photographe Mimi Keels. Oiseau coloré posé sur une branche" />
+      </div>
+      <div class="portfolio_description">
+        <h3>Arc-en-ciel</h3>
+        <span class="portfolio_legend">12 <i class="fas fa-heart"></i> </span>
+      </div>
+    </section>
   </main>
-
+  <div id="modalbg"class="modal">
+    <i id="closemodal" class="fas fa-times"></i>
+    <p class="modal_text">Contactez-moi</p>
+    <p class="modal_text">Mimi Keel</p>
+    <form class="modal_form" name="contact" method="get">
+      <div class="form_field">
+        <label class="form_label" for="firstname">Prénom</label>
+        <input class="text-control" type="text" id="firstname_field" name="firstname" />
+      </div>
+      <div class="form_field">
+        <label class="form_label" for="lastname">Nom</label>
+        <input class="text-control" type="text" id="lastname_field" name="lastname" />
+      </div>
+      <div class="form_field">
+        <label class="form_label" for="email">E-mail</label>
+        <input class="text-control" type="email" id="email" name="email" />
+      </div>
+      <div class="form_field">
+        <label class="form_label" for="message">Votre message</label>
+        <input class="text-control-message" type="text" id="firstname_field" name="firstname" />
+      </div>
+      <input class="form_submit" type="submit"value="Envoyer" />
+    </form>
+  </div>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
