@@ -27,7 +27,6 @@ const datas = fetch('js/datajson.json')
     tagline[0].innerHTML = data.photographers[0].tagline;
     price[0].innerHTML = data.photographers[0].price + "€/jour";
     profilPic[0].src = data.photographers[0].portrait;
-    tagList[0].appendChild(tag)
     
     
     // Photographer 2
