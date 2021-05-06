@@ -12,6 +12,19 @@
 
 /* ---BODY ---*/
 
+a {
+  text-decoration: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a:visited{
+  text-decoration: none;
+}
+
 /* DESKTOP*/
 @media screen and (min-width: 1025px) {
   body {
@@ -72,7 +85,7 @@
     border-radius: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
   }
   #section_title {
@@ -149,7 +162,7 @@
     border-radius: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -197,6 +210,9 @@
     width: 15em;
     height: 15em;
     border-radius: 1em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
   }
 
   .section_profilpic_image {
@@ -262,6 +278,8 @@
   }
   .section_buttons {
     margin-top: 0.7em;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -301,6 +319,9 @@
     width: 12em;
     height: 12em;
     border-radius: 1em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
   }
 
   .section_profilpic_image {

@@ -406,6 +406,10 @@
     color: var(---primary-color-photographer-fees);
   }
 
+  h3{
+    width:80%;
+  }
+
   .section__fees {
     font-size: 0.9em;
     font-style: normal;
@@ -448,6 +452,7 @@
     color: var(--primary-color-header-information);
     font-size: 1em;
     font-weight: 400;
+    width:50%;
   }
 
   .portfolio_legend {
@@ -554,6 +559,7 @@
     color: var(--primary-color-photographer-name);
   }
 
+
   p {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
@@ -623,6 +629,7 @@
     color: var(--primary-color-header-information);
     font-size: 1em;
     font-weight: 400;
+    width:50%;
   }
   .portfolio_legend {
     color: var(--primary-color-header-information);

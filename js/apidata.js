@@ -19,7 +19,13 @@ const datas = fetch('js/datajson.json')
     const profilPic = document.getElementsByClassName("section_profilpic_image");
     const tagList = document.getElementsByClassName("section_buttons");
     const tag = document.createElement("button").classList.add("button");
-;
+
+/*let nameValues = data.photographers.key[0];
+    const name = document.getElementsByTagName("h2");
+    for (let i = 0; i < nameValues.length; i++) {
+    name[i].innerHTML = nameValues[i]*/
+
+
 
     // Photographer 1
     name[0].innerHTML = data.photographers[0].name;
