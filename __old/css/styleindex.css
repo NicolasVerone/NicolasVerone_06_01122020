@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+  --primary-color-header-information: #901c1c;
+  --primary-color-photographer-name: #d3573c;
+  --primary-color-photographer-description: #000000;
+  --primary-color-photographer-fees: #525252;
+  --font-default: "DM Sans", Arial, Helvetica, sans-serif;
+}
+
+
+
+/* ---BODY ---*/
+
+a {
+  text-decoration: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a:visited{
+  text-decoration: none;
+}
+
+/* DESKTOP*/
+@media screen and (min-width: 1025px) {
+  body {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--font-default);
+  }
+}
+/*MOBILE & TABLET*/
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  body {
+    width: 320px;
+    padding: 2%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-default);
+  }
+}
+
+/* ---HEADER & NAV---*/
+
+/*DESKTOP*/
+@media screen and (min-width: 1025px) {
+  header {
+    height: 157px;
+    width: 100%;
+    left: 7px;
+    top: 6px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .headerlogo_container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerlogo {
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+  }
+
+  nav {
+    height: 49px;
+    width: 50%;
+    border-radius: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #section_title {
+    height: 157px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7em;
+    line-height: 47px;
+    display: inline-block;
+    color: var(--primary-color-header-information);
+  }
+
+  .button {
+    border-color: var(--primary-color-photographer-fees);
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 1em 1em 1em 1em;
+    background-color: white;
+    color: var(--primary-color-header-information);
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: 0em;
+    font-size: 0.8em;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: var(--font-default);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  header {
+    width: 100%;
+    padding-top: 10px;
+    height:130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .headerlogo_container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .headerlogo {
+    height: 90%;
+    width: 90%;
+  }
+
+  #section_title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 125px;
+    left:160px;
+  }
+
+  nav {
+    height: 49px;
+    margin-top:20px;
+    width: 100%;
+    border-radius: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .button {
+    border-color: var(--primary-color-photographer-fees);
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 1em 1em 1em 1em;
+    background-color: white;
+    color: var(--primary-color-header-information);
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: 0em;
+    font-size: 0.8em;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: var(--font-default);
+  }
+}
+
+/* ---MAIN CONTENT---*/
+
+/*DESKTOP*/
+@media screen and (min-width: 1025px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:0px;
+  }
+
+  .section_container {
+    width: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section_profilpic_container {
+    width: 15em;
+    height: 15em;
+    border-radius: 1em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .section_profilpic_image {
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .section_description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary-color-photographer-name);
+    margin-bottom:0px;
+  }
+
+  p {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    width:100%;
+  }
+
+  .section_location {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary-color-header-information);
+  }
+
+  .section_tagline {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary-color-photographer-description);
+  }
+
+  .section__fees {
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary-color-photographer-fees);
+  }
+  .section_buttons {
+    margin-top: 0.7em;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*MOBILE*/
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section_container {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+
+  h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 47px;
+    display: inline-block;
+    color: var(--primary-color-header-information);
+    
+  }
+
+  .section_profilpic_container {
+    width: 12em;
+    height: 12em;
+    border-radius: 1em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .section_profilpic_image {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .section_description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1.7em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary-color-photographer-name);
+    margin-bottom: 0px;
+  }
+
+  p {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+  }
+
+  .section_location {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary-color-header-information);
+  }
+
+  .section_tagline {
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary-color-photographer-description);
+  }
+
+  .section__fees {
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary-color-photographer-fees);
+  }
+  .section_buttons {
+    margin-top: 0.7em;
+  }
+}
