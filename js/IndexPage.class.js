@@ -41,8 +41,8 @@ datasRequest.then(datas => {
             location.innerHTML = photographer.city + ", " + photographer.country;
             tagline.innerHTML = photographer.tagline;
             fees.innerHTML = photographer.price + "€/jour";
-        }   
-           
+        }
+
         displayInfo();
     })
 
