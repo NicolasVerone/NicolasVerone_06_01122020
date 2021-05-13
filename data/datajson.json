@@ -11,16 +11,6 @@
       "portrait": "MimiKeel.jpg"
     },
     {
-      "name": "Tony Soprano",
-      "id": 1000,
-      "city": "New Jersey",
-      "country": "USA",
-      "tags": ["animals"],
-      "tagline": "Oh, poor baby. What do you want, a Whitman’s Sampler?",
-      "price": 1000,
-      "portrait": "tonysoprano.jpg"
-    },
-    {
       "name": "Ellie-Rose Wilkens",
       "id": 930,
       "city": "Paris",

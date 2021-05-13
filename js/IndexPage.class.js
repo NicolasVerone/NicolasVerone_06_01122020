@@ -14,6 +14,7 @@ datasRequest.then(datas => {
             const location = document.createElement('p');
             const tagline = document.createElement('p');
             const fees = document.createElement('p');
+            const button = document.createElement('button');
             // Mise en place des éléments
             main.appendChild(container);
             container.appendChild(imageContainer);
@@ -23,6 +24,7 @@ datasRequest.then(datas => {
             descriptionContainer.appendChild(tagline);
             descriptionContainer.appendChild(location);
             descriptionContainer.appendChild(fees);
+            descriptionContainer.appendChild(button);
             // Définition des classes des éléments
             container.classList.add('section_container');
             imageContainer.classList.add('section_profilpic_container');
@@ -32,20 +34,19 @@ datasRequest.then(datas => {
             location.classList.add('section_location');
             tagline.classList.add('section_tagline');
             fees.classList.add('section__fees');
+            button.classList.add('button');
             // Sources des éléments
             image.src = "media/Photographers ID Photos/" + photographer.portrait;
             name.innerHTML = photographer.name;
             location.innerHTML = photographer.city + ", " + photographer.country;
             tagline.innerHTML = photographer.tagline;
             fees.innerHTML = photographer.price + "€/jour";
-        }
-
-
+        }   
+           
         displayInfo();
     })
 
     const displayTags = () => {
-        
         const tags = [
             {
                 "type": "#Portrait"
