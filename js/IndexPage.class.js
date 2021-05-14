@@ -4,50 +4,46 @@ datasRequest.then(datas => {
     datas.photographers.forEach(photographer => {
 
         const displayInfo = () => {
-            // Création des éléments
             const main = document.getElementById('content');
             const container = document.createElement('section');
-            const imageContainer = document.createElement('div');
-            const image = document.createElement('img');
-            const descriptionContainer = document.createElement('div');
-            const name = document.createElement('h2');
-            const location = document.createElement('p');
-            const tagline = document.createElement('p');
-            const fees = document.createElement('p');
-            const button = document.createElement('button');
-            // Mise en place des éléments
-            main.appendChild(container);
-            container.appendChild(imageContainer);
-            container.appendChild(descriptionContainer);
-            imageContainer.appendChild(image);
-            descriptionContainer.appendChild(name);
-            descriptionContainer.appendChild(tagline);
-            descriptionContainer.appendChild(location);
-            descriptionContainer.appendChild(fees);
-            descriptionContainer.appendChild(button);
-            // Définition des classes des éléments
             container.classList.add('section_container');
-            imageContainer.classList.add('section_profilpic_container');
-            image.classList.add('section_profilpic_image');
-            descriptionContainer.classList.add('section_description');
-            name.classList.add('photographer_name');
-            location.classList.add('section_location');
-            tagline.classList.add('section_tagline');
-            fees.classList.add('section__fees');
-            button.classList.add('button');
-            // Sources des éléments
-            image.src = "media/Photographers ID Photos/" + photographer.portrait;
-            name.innerHTML = photographer.name;
-            location.innerHTML = photographer.city + ", " + photographer.country;
-            tagline.innerHTML = photographer.tagline;
-            fees.innerHTML = photographer.price + "€/jour";
+            main.appendChild(container);
+            container.innerHTML = `
+            <a href="">
+            <div class="section_profilpic_container">
+              <img aria-label="photo du photographe" class="section_profilpic_image"
+                src="/media/Photographers ID Photos/${photographer.portrait}" alt="${photographer.name}, Photographe freelance" />
+            </div>
+            <div class="section_description">
+              <h2 aria-label="Nom du photographe">${photographer.name}</h2>
+              <p aria-label="Lieu d'habitation du photographe" class="section_location">${photographer.city}, ${photographer.country}</p>
+              <p aria-label="Tagline du photographe" class="section_tagline">${photographer.tagline}</p>
+              <p aria-label="Tarif du photographe" class="${photographer.price}€/jour"></p>
+            </div>
+            <div class="section_buttons">
+              <button aria-label="spécialité du photographe : art" class="button" type="button" value="Art">#Art</button>
+              <button aria-label="spécialité du photographe : mode" class="button" type="button"
+                value="Fashion">#Fashion</button>
+              <button aria-label="spécialité du photographe : faune" class="button" type="button"
+                value="Animals">#Animals</button>
+            </div>
+          </a>          
+            `
         }
-
         displayInfo();
+
     })
+    const createTags = () => {
+        const tagList = [];
+        datas.photographers.tags.forEach(tag => {
+            const addTags = tagList.push(tag);
+            const button = document.createElement('button');
+        })
+    }
+
 
     const displayTags = () => {
-        const tags = [
+        const tagList = [
             {
                 "type": "#Portrait"
             },
@@ -74,7 +70,7 @@ datasRequest.then(datas => {
             },
         ]
 
-        tags.forEach(tag => {
+        tagList.forEach(tag => {
             nav = document.getElementById("nav");
             const tagElement = document.createElement("button");
             tagElement.classList.add('button');
